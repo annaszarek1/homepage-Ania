@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="00index.html">Strona główna</a>
+        <br>
+        <a href="01frontend.html">Przydatne linki dla FRONTEND</a>
+        <br>
+        <a href="02skrotyVSC.html">Przydatne skróty klawiszowe w VSC</a>
+        <br>
+        <a href="03linkiHTML.html">Przydatne linki dla HTML</a>
+        <br>
+        <a href="04linkiCSS.html">Przydatne linki dla CSS</a>
+        <br>
+        <a href="05notatkiHTML.html">Notatki z kursu - HTML</a>
+        <br>
+        <a href="06notatkiCSS.html">Notatki z kursu - CSS</a>
+        <br>
+        <a href="07notatkiJS.html">Notatki z kursu - JavaScript</a>
+        <br>
+        <a href="08notatkiDT.html">Notatki z kursu - Narzędzia deweloperskie (Dev Tools)</a>
+        <br>
+        <a href="09notatkiprzegladarka.html">Notatki z kursu - Przeglądarki i internet</a>
+        <br>
+        <a href="10notatkiGIT.html">Notatki z kursu - GIT</a>
+        <br>
+        <a href="11notatkiTerminal.html">Notatki z kursu - Terminal</a>
+        <br>
+        <a href="12notatkiGITHUB.html">Notatki z kursu - GITHUB</a>
+        <br>
+        <a href="15notatkiInne.html">Notatki z kursu - pozostałe tematy</a>
+    </header>
+    <main>
+        <article>
+            <h3>Notatki CSS</h3>
+            <section>
+                <h4>
+                    CSS = Cascading Style Sheets (Kaskadowe Arkusze Stylów)
+                </h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-ii/lekcja-02-04-wtf-css/">Lekcja W02E04 CSS
+                            I</a>
+                    <br> -> CSS odpowiadają za prezentację treści strony
+                    <br> -> CSS nie mają jednej wersji (rozwój modułów) - potocznie mówi się, że aktualna wersja to 3
+                    <br> -> Przeglądarki potrafią różnie interpretować CSS co prowadzi do tego, że pisanie stylów CSS powoduje wiele frustracji u programistów (ale może też być niezłym wyzwaniem)
+                    <br> -> Wpływają na wygląd elementów HTML na ekranie, wydrukach itp.
+                    <br> -> Składnia CSS to <b>reguły</b>
+                    <br> -> Pliki zawierające kod CSS mają rozszerzenie .css
+                    <br> -> Jednak istnieje możliwość korzystania z reguł CSS bez używania zewnętrznych plików (style nie muszą znajdować się w pliku CSS)
+                    <br> -> Aby użyć stylów znajdujących się w osobnym pliku korzystamy z odpowiedniego znacznika HTML <em>("link" & "/link")</em>, który dodaje się w sekcji "head" dokumentu HMTL
+                    <br>
+                </p>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-04-wtf-css-ii/">Lekcja: W03E04 CSS II</a>
+                    <br> -> Rekomendacją Maćka Korsana jest aby dodawać klasy (<a href="05notatkiHTML.html#atrybuty">atrybut </a> "class") do wszystkich elementów i unikać zagnieżdżeń
+                </p>
+                <br>
+            </section>
+
+            <section>
+                <h4>Budowa reguły CSS</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-ii/lekcja-02-04-wtf-css/">Lekcja W02E04 CSS I</a>
+                    <br>1. Reguła CSS składa się z "selektora", nawiasu otwierającego "{" i zamykającego "}" oraz z "właściwości", które podajemy w środku nawiasów
+                    <br>2. Bardzo ważne jest aby dodać ";" na końcu linii (po wartości), brak tego znaku na końcu każdej linii (wewnątrz selektora) to błąd
+                    <img src="regulaCSS.JPG" alt="graficzne przedstawienie budowy reguły CSS">
+                </p>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-04-wtf-css-ii/">Lekcja: W03E04 CSS II</a>
+                    <br> -> Reguły CSS mogą referować do klas nadawanych znacznikom HTML przez <a href="05notatkiHTML.html#atrybuty">atrybut </a> <em>"class"</em>>
+                    <br> Zapis takiej reguły (w pliku .css) jest następujący:
+                    <br><b>.nazwa klasy {
+                                <br>właściwość: wartość;
+                                <br>}</b>
+                    <br> TUTAJ BĘDZIE OBRAZEK
+                    <br> gdzie "." oznacza właśnie klasę
+                    <br> Stylowanie (absolutnie wszystkiego) tą metodą jest dobrą praktyką polecaną przez Maćka Korsana (nawet jeśli mamy tylko jeden element w danej klasie)
+                    <br>
+                </p>
+                <p> <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-04-wtf-css-ii/">Lekcja: W03E04 CSS II</a>
+                    <br> -> Reguły CSS mogą także referować do konkretnych znaczników HTML w kodzie oznaczonych przez <a href="05notatkiHTML.html#atrybuty">atrybut </a> <em>"id"</em>
+                    <br> Zapis takiej reguły (w pliku .css) jest następujący:
+                    <br><b>#nazwa id {
+                                    <br>właściwość: wartość;
+                                    <br>}</b>
+                    <br>TUTAJ BĘDZIE OBRAZEK
+                    <br> gdzie "#" oznacza właśnie id
+                    <br> Stylowanie tą metodą nie jest dobrą praktyką i nie jest polecane przez Maćka Korsana
+                </p>
+                <br>
+            </section>
+            <section>
+                <h4>Specyficzność w CSS (priorytet stylowania)</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-04-wtf-css-ii/">Lekcja: W03E04 CSS II</a>
+                    <br>Jeśli specyficzność jest równa, pierwszeństwo ma selektor "bliżej" stylowanego elementu
+                    <br>
+                    <img src="specyficzność.JPG" alt="obrazek przedstawia priorytet różnych sposobów stylowania">
+                </p>
+                <br>
+            </section>
+            <section>
+                <h4>Nazewnictwo atrybutu <em>"class"</em> (dla CSS)</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-04-wtf-css-ii/">Lekcja: W03E04 CSS II</a>
+                    <br> <img src="nazewnictwoklas.JPG" alt="obrazek przedstawia najważniejsze wytyczne dotyczące nazewnictwa klas">
+                </p>
+            </section>
+
+        </article>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="00index.html">Strona główna</a>
+        <br>
+        <a href="01frontend.html">Przydatne linki dla FRONTEND</a>
+        <br>
+        <a href="02skrotyVSC.html">Przydatne skróty klawiszowe w VSC</a>
+        <br>
+        <a href="03linkiHTML.html">Przydatne linki dla HTML</a>
+        <br>
+        <a href="04linkiCSS.html">Przydatne linki dla CSS</a>
+        <br>
+        <a href="05notatkiHTML.html">Notatki z kursu - HTML</a>
+        <br>
+        <a href="06notatkiCSS.html">Notatki z kursu - CSS</a>
+        <br>
+        <a href="07notatkiJS.html">Notatki z kursu - JavaScript</a>
+        <br>
+        <a href="08notatkiDT.html">Notatki z kursu - Narzędzia deweloperskie (Dev Tools)</a>
+        <br>
+        <a href="09notatkiprzegladarka.html">Notatki z kursu - Przeglądarki i internet</a>
+        <br>
+        <a href="10notatkiGIT.html">Notatki z kursu - GIT</a>
+        <br>
+        <a href="11notatkiTerminal.html">Notatki z kursu - Terminal</a>
+        <br>
+        <a href="12notatkiGITHUB.html">Notatki z kursu - GITHUB</a>
+        <br>
+        <a href="15notatkiInne.html">Notatki z kursu - pozostałe tematy</a>
+    </header>
+    <main>
+        <article>
+            <h3>Notatki - przeglądarka i internet</h3>
+            <section>
+                <h4>HTTP = Hypertext Transfer Protocol</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-05-jak-dziala-internet-i-przegladarka/">Lekcja:
+                        W03E05 Jak działa Internet i przeglądarka</a>
+                    <br>-> HTTP to protokół, który obsługuje strony internetowe i ich zawartość (służy do transportowania hmtla oraz wszystkich innych danych, które są widoczne na stronie internetowej w przeglądarce)
+                    <br>-> Obecnie coraz cześciej w użytku jest HTTP/2 (HTTP version 2)
+                    <br>-> HTTP/2 przyspiesza internet, ponieważ pozwala na wykonywanie równoległych połączeń i nie blokuje serwera
+                </p>
+                <br>
+            </section>
+            <section>
+                <h4>HTTPS = Hypertext Transfer Protocol Secure</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-05-jak-dziala-internet-i-przegladarka/">Lekcja:
+                        W03E05 Jak działa Internet i przeglądarka</a>
+                    <br>-> HTTPS to także protokół do transportowania danych
+                    <br>-> Różnica między <em>HTTP</em> a <em>HTTPS</em> jest taka, że <em>HTTPS</em> jest szyfrowany (bezpieczny)
+                    <br>-> Rekomendacją Maćka Korsana jest aby korzystać tylko z HTTPS
+                    <br>-> Kiedy do transportu danych używany protokół HTTPS w pasku adresu pojawia się ikonka kłódki
+                </p>
+                <br>
+            </section>
+            <section>
+                <h4>URL = Uniform Resource Locator</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-05-jak-dziala-internet-i-przegladarka/">Lekcja:
+                        W03E05 Jak działa Internet i przeglądarka</a>
+                    <br>-> Jest to adres, który wpisujemy w przeglądarkę (czyli adres strony na serwerze)
+                    <br>-> Adres URL składa się z następujących części
+                    <img src="adresURL.JPG" alt="opis graficzny adresu URL">
+                    <br>-> "Root" ("/") jest istotną częścią ścieżek do zasobów
+                    <br>-> "Root" ("/") mówi o tym, w którym miejscu przeglądarka powinna szukać zasobu
+                    <br>-> Tworząc stronę uruchamianą "z dysku" należy pomijać używanie "/" z przodu ścieżki (bo może to generować problemy)
+                </p>
+                <br>
+            </section>
+            <section>
+                <h4>
+                    Przepływ danych w przeglądarce
+                </h4>
+                <p><a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-05-jak-dziala-internet-i-przegladarka/">Lekcja:
+                        W03E05 Jak działa Internet i przeglądarka</a>
+                    <br>->Komunikacja przeglądarki z serwerem jest w modelu <em>"request-response"</em> (przeglądarka wysyła request to serwera, serwer zwraca żądane zasoby lub informuje o błędzie)
+                    <img src="przeplywinformacji.JPG" alt="graficzny opis przeplywu informacji w procesie wymiany danych miedzy przeglądarką a serwerem">
+
+                </p>
+            </section>
+
+            <section>
+                <h4>Kody odpowiedzi protokołu HTTP</h4>
+                <p>
+                    <a href="https://kursy.devstyle.pl/frontend/tydzien-iii/lekcja-03-05-jak-dziala-internet-i-przegladarka/">Lekcja:
+                        W03E05 Jak działa Internet i przeglądarka</a>
+                    <br>-> Odpowiedzi serwera mają różne kody, co pozwala diagnozować ewentualne problemy
+                    <br>-> 100 - poczekaj, za chwilę dostaniesz odpowiedź
+                    <br>-> 200 - OK
+                    <br>-> 30x - szukasz w złym miejscu, ale przekieruję Cię w dobre, bo wiem gdzie
+                    <br>-> 404 - nie mam tego, czego potrzebujesz
+                    <br>-> 500 - błąd wewnętrzny serwera
+
+                </p>
+            </section>
+
+
+        </article>
+    </main>
+
+</body>
+
+</html>

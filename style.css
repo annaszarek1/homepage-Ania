@@ -1,0 +1,43 @@
+body {
+    background: #8db8c7;
+}
+
+section {
+    font-size: 20px;
+}
+
+body header {
+    font-size: 25px;
+    color: rgb(98, 43, 226);
+}
+
+.mainHeader {
+    color: cyan;
+    background: navy;
+}
+
+.mainSection {
+    font-size: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.sectionHeader {
+    color: white;
+    font-size: 30px;
+}
+
+h4 {
+    color: rgb(207, 38, 193);
+}
+
+p {
+    color: darkblue;
+}
+
+#oMnie {
+    background: hotpink;
+}
