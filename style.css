@@ -27,16 +27,15 @@ body header {
     font-size: 30px;
 }
 
+.article {
+    background: lightpink;
+}
+
 .mainSection {
     font-size: 20px;
 }
 
-h2 {
-    color: white;
-    font-size: 30px;
-}
-
-h4 {
+.h4 {
     color: rgb(207, 38, 193);
 }
 
