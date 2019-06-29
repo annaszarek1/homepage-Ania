@@ -2,10 +2,6 @@ body {
     background: #8db8c7;
 }
 
-section {
-    font-size: 20px;
-}
-
 body header {
     font-size: 25px;
     color: rgb(98, 43, 226);
@@ -14,6 +10,21 @@ body header {
 .mainHeader {
     color: cyan;
     background: navy;
+}
+
+.sectionHeader {
+    color: white;
+    font-size: 30px;
+}
+
+.menuHeader {
+    color: darkgrey;
+    background: aquamarine;
+}
+
+.headerLink {
+    color: hotpink;
+    font-size: 30px;
 }
 
 .mainSection {
@@ -25,16 +36,11 @@ h2 {
     font-size: 30px;
 }
 
-.sectionHeader {
-    color: white;
-    font-size: 30px;
-}
-
 h4 {
     color: rgb(207, 38, 193);
 }
 
-p {
+.paragraph {
     color: darkblue;
 }
 
